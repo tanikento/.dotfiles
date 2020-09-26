@@ -1,5 +1,13 @@
 [user]
-	name = tanikento
-	email = kento.tani@seattleconsulting.co.jp
+  name = tanikento
+  email = kento.tani@seattleconsulting.co.jp
 [core]
-	quotepath = false
+  quotepath = false
+  autocrlf = false
+  ignorecase = false
+[color]
+  ui = true
+[pull]
+  rebase = false
+[push]
+  default = nothing

@@ -112,25 +112,41 @@ setopt share_history
 # --------------------------------------------------
 
 autoload colors
-colors 
+colors
 
-# vcs_infoロード    
+# vcs_infoロード
 autoload -Uz vcs_info
-    
-# PROMPT変数内で変数参照する    
-setopt prompt_subst    
 
-# vcsの表示    
-zstyle ':vcs_info:*' formats '%s][* %F{yellow}%B%b%f'    
+# PROMPT変数内で変数参照する
+setopt prompt_subst
+
+# vcsの表示
+zstyle ':vcs_info:*' formats '%s][* %F{yellow}%B%b%f'
 zstyle ':vcs_info:*' actionformats '%s][* %F{yellow}%B%b%f(%F{red}%B%a%f)'
- 
-# プロンプト表示直前にvcs_info呼び出し    
+
+# プロンプト表示直前にvcs_info呼び出し
 precmd() { vcs_info }
-    
-# プロンプト表示    
+
+# プロンプト表示
 PROMPT='
 %B[${vcs_info_msg_0_}]:%~/%f
 %F{yellow}%B>>$%b%f '
 
 
+# --------------------------------------------------
+#  brew
+# --------------------------------------------------
+
+# brewfile を自動で更新する
+if [ -f $(brew --prefix)/etc/brew-wrap ];then
+  source $(brew --prefix)/etc/brew-wrap
+fi
+
+# brewfile の場所を変更する
+export HOMEBREW_BREWFILE=~/dotfiles/Brewfile
+
+
+# --------------------------------------------------
+#  個別のzshrcの読み込み
+# --------------------------------------------------
 [ -f ~/.zshrc.lmi ] && source ~/.zshrc.lmi
