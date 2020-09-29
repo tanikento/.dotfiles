@@ -11,7 +11,7 @@
         "revision": "92646be5010c25f861cf11f6c2cfe96147cb2c65"
       },
       "homebrew/core": {
-        "revision": "b28591f45aea2b97979ca3334338d2ac4a29bbef"
+        "revision": "0b6544fedc9e2232a12826922dfc3b12872ff410"
       }
     },
     "cask": {
@@ -61,6 +61,12 @@
         "version": "4.9.0",
         "options": {
           "full_name": "slack"
+        }
+      },
+      "zoomus": {
+        "version": "5.3.52877.0927",
+        "options": {
+          "full_name": "zoomus"
         }
       }
     },
@@ -271,7 +277,7 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.5.2",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "b28591f45aea2b97979ca3334338d2ac4a29bbef",
+        "Homebrew/homebrew-core": "0b6544fedc9e2232a12826922dfc3b12872ff410",
         "CLT": "",
         "Xcode": "",
         "macOS": "10.15.7"
