@@ -5,13 +5,13 @@
         "revision": "12702c2b9111a447bb89cd887771d20cffab4e63"
       },
       "homebrew/cask": {
-        "revision": "be3785aef4c4f8aa17908697f61ba8e70d8f55c7"
+        "revision": "68471bc087b03631238f98784014039e95cdc1a1"
       },
       "homebrew/cask-versions": {
-        "revision": "92646be5010c25f861cf11f6c2cfe96147cb2c65"
+        "revision": "78a46ae15268a21c7ee62abf111ce06f4d91d274"
       },
       "homebrew/core": {
-        "revision": "0b6544fedc9e2232a12826922dfc3b12872ff410"
+        "revision": "2da403612205f0e99d3345415930cd84d27a46e0"
       }
     },
     "cask": {
@@ -22,13 +22,13 @@
         }
       },
       "atom": {
-        "version": "1.51.0",
+        "version": "1.38.2",
         "options": {
           "full_name": "atom"
         }
       },
       "docker": {
-        "version": "2.3.0.5,48029",
+        "version": "2.0.0.3-ce-mac81,31259",
         "options": {
           "full_name": "docker"
         }
@@ -40,13 +40,13 @@
         }
       },
       "google-chrome": {
-        "version": "85.0.4183.121",
+        "version": "75.0.3770.100",
         "options": {
           "full_name": "google-chrome"
         }
       },
       "iterm2": {
-        "version": "3.3.12",
+        "version": "3.2.9",
         "options": {
           "full_name": "iterm2"
         }
@@ -58,15 +58,33 @@
         }
       },
       "slack": {
-        "version": "4.9.0",
+        "version": "3.4.2",
         "options": {
           "full_name": "slack"
         }
       },
       "zoomus": {
-        "version": "5.3.52877.0927",
+        "version": "5.3.52651.0920",
         "options": {
           "full_name": "zoomus"
+        }
+      },
+      "karabiner-elements": {
+        "version": "12.10.0",
+        "options": {
+          "full_name": "karabiner-elements"
+        }
+      },
+      "kindle": {
+        "version": "58033",
+        "options": {
+          "full_name": "kindle"
+        }
+      },
+      "kindle-previewer": {
+        "version": "latest",
+        "options": {
+          "full_name": "kindle-previewer"
         }
       }
     },
@@ -277,9 +295,9 @@
       "catalina": {
         "HOMEBREW_VERSION": "2.5.2",
         "HOMEBREW_PREFIX": "/usr/local",
-        "Homebrew/homebrew-core": "0b6544fedc9e2232a12826922dfc3b12872ff410",
-        "CLT": "",
-        "Xcode": "",
+        "Homebrew/homebrew-core": "2da403612205f0e99d3345415930cd84d27a46e0",
+        "CLT": "12.0.0.0.1.1599194153",
+        "Xcode": "12.0",
         "macOS": "10.15.7"
       }
     }
