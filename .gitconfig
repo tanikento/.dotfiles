@@ -1,6 +1,8 @@
 [user]
   name = tanikento
   email = kento.tani@seattleconsulting.co.jp
+[includeIf "gitdir:~/my/"]
+  path = ~/.gitconfig_my
 [core]
   quotepath = false
   autocrlf = false

@@ -1,5 +1,6 @@
 export PATH=~/Library/Python/3.4/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
+export PATH=/usr/local/sbin:$PATH
 
 # ------------------------------------------------
 #  エイリアス設定
