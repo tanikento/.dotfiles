@@ -1,0 +1,22 @@
+[core]
+  excludesfile = ~/.gitignore_global
+  editor = vim
+  quotepath = false
+  commitGraph = true
+  autocrlf = false
+  ignorecase = false
+[protocol]
+  version = 2
+[user]
+  name = Kenti Tani
+  email = k.tani0212@gmail.com
+[color]
+  ui = true
+[fetch]
+  prune = true
+[pull]
+  rebase = false
+[push]
+  default = current
+[include]
+  path = ~/.gitconfig_private

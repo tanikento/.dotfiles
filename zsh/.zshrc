@@ -1,6 +1,20 @@
 export PATH=~/Library/Python/3.4/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
+export GPG_TTY=$(tty)
+eval "$(direnv hook zsh)"
+
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init --path)"
+fi
+
+[[ -d ~/.rbenv  ]] && \
+  export PATH=${HOME}/.rbenv/bin:${PATH} && \
+  eval "$(rbenv init -)"
+
+eval "$(dip console)"
 
 # ------------------------------------------------
 #  エイリアス設定
@@ -20,6 +34,9 @@ alias gp='git push'
 alias gf='git fetch'
 alias gm='git merge'
 alias gl='git log'
+alias glo='git log --oneline'
+alias glf="git log --name-status"
+alias gr='git rebase'
 alias gs='git status'
 alias gb='git branch'
 alias gco='git checkout'
@@ -131,7 +148,7 @@ precmd() { vcs_info }
 
 # プロンプト表示
 PROMPT='
-%B[${vcs_info_msg_0_}]:%~/%f
+%B[`git config user.name`][${vcs_info_msg_0_}]:%~/%f
 %F{yellow}%B>>$%b%f '
 
 
@@ -151,4 +168,4 @@ export HOMEBREW_BREWFILE=~/dotfiles/Brewfile
 # --------------------------------------------------
 #  個別のzshrcの読み込み
 # --------------------------------------------------
-[ -f ~/.zshrc.lmi ] && source ~/.zshrc.lmi
+[ -f ~/.zshrc.med ] && source ~/.zshrc.med
