@@ -2,6 +2,7 @@ export PATH=~/Library/Python/3.4/bin:$PATH
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export PATH=/usr/local/sbin:$PATH
 export GPG_TTY=$(tty)
+export RUBY_CONFIGURE_OPTS="--with-openssl-dir=$(brew --prefix openssl@1.1)"
 eval "$(direnv hook zsh)"
 
 export PYENV_ROOT="$HOME/.pyenv"
