@@ -23,6 +23,7 @@ brew "fswatch"
 brew "git"
 brew "gnupg", link: false
 brew "graphviz"
+brew "imagemagick"
 brew "jq"
 brew "nginx"
 brew "nkf"
